@@ -1,0 +1,81 @@
+{
+  "name": "@edutech/web",
+  "version": "2.0.0",
+  "description": "EduTech ChatBot Frontend Web Application",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "analyze": "ANALYZE=true next build",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf .next out dist"
+  },
+  "dependencies": {
+    "@edutech/shared": "workspace:*",
+    "next": "^15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "lucide-react": "^0.525.0",
+    "framer-motion": "^12.0.0",
+    "zustand": "^5.0.2",
+    "react-markdown": "^10.0.0",
+    "react-hook-form": "^7.54.0",
+    "axios": "^1.10.0",
+    "@hookform/resolvers": "^3.10.0",
+    "zod": "^3.24.1",
+    "clsx": "^2.1.1",
+    "class-variance-authority": "^0.7.1",
+    "cmdk": "^1.0.4",
+    "sonner": "^1.7.1"
+  },
+  "devDependencies": {
+    "@next/eslint-config-next": "^15.3.5",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.3.5",
+    "postcss": "^8.5.1",
+    "autoprefixer": "^10.4.20",
+    "@playwright/test": "^1.49.1",
+    "vitest": "^2.1.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "jsdom": "^25.0.1",
+    "rimraf": "^6.0.1",
+    "@bundle-analyzer/webpack-plugin": "^0.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "@edutech/api",
+  "version": "2.0.0",
+  "description": "EduTech ChatBot Backend API Server",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@edutech/database": "workspace:*",
+    "@edutech/config": "workspace:*",
+    "@edutech/shared": "workspace:*",
+    "@prisma/client": "^5.22.0",
+    "express": "^5.0.1",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.5",
+    "express-rate-limit": "^7.4.1",
+    "express-validator": "^7.2.0",
+    "dotenv": "^17.0.3",
+    "openai": "^5.9.0",
+    "axios": "^1.10.0",
+    "uuid": "^11.0.3",
+    "qrcode": "^1.5.4",
+    "multer": "^2.0.0-rc.4",
+    "papaparse": "^5.5.0",
+    "jszip": "^3.10.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9",
+    "@types/compression": "^1.7.5",
+    "@types/uuid": "^10.0.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/multer": "^1.4.12",
+    "@types/papaparse": "^5.3.14",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "supertest": "^7.0.0",
+    "@types/supertest": "^6.0.2",
+    "rimraf": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module"
+}
