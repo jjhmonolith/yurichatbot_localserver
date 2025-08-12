@@ -77,7 +77,7 @@ const configurations: Record<string, Partial<AppConfig>> = {
       host: '0.0.0.0',
       cors: {
         origins: [
-          'http://localhost:3000',
+          'http://localhost:3300',
           'https://*.ngrok.io',
           'https://*.cloudflare.com',
           // 동적으로 추가될 Cloudflare 도메인
@@ -108,7 +108,7 @@ const configurations: Record<string, Partial<AppConfig>> = {
       port: 3001,
       host: 'localhost',
       cors: {
-        origins: ['http://localhost:3000'],
+        origins: ['http://localhost:3300'],
         credentials: true,
       }
     },

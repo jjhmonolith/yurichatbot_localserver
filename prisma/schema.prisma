@@ -33,7 +33,7 @@ model PassageSet {
   title          String   // 지문 제목
   passage        String   // 지문 내용 (TEXT)
   passageComment String   // 지문 해설 (TEXT)
-  qrCode         String   @unique @db.VarChar(6) // 고유 QR 코드 (6자리)
+  qrCode         String   @unique // 고유 QR 코드 (6자리)
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
